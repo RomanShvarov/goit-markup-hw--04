@@ -238,7 +238,14 @@ img {
 /* ------------------------------index style------------------------------ */
 /* -----------------hero----------------- */
 .hero {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   background-color: var(--footer-hero-bcg-color);
+  background-image: url(../images/bcg/hero-bcg.jpg), linear-gradient(#2f303a66, #2f303a66);
+  background-repeat: no-repeat;
+  background-position: center;
+
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -457,6 +464,7 @@ img {
 .btn:focus {
   color: var(--white-txt-color);
   background-color: var(--accent-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .portfolio-list {
@@ -477,6 +485,12 @@ img {
 
 .portfolio-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .descr-filtname-grp {
