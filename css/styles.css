@@ -203,7 +203,7 @@ img {
 
 .footer-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .foot-logo-adress-box {
@@ -251,11 +251,6 @@ img {
 .footer-mail:hover,
 .footer-mail:focus {
   color: var(--accent-color);
-}
-
-.foot-socials-box {
-  padding-top: 12px;
-  padding-bottom: 40px;
 }
 
 .foot-socials-list {
@@ -308,10 +303,12 @@ img {
 /* -----------------hero----------------- */
 .hero {
   max-width: 1600px;
+  max-height: 600px;
   margin-right: auto;
   margin-left: auto;
   background-color: var(--footer-hero-bcg-color);
   background-image: linear-gradient(#2f303a66, #2f303a66), url(../images/bcg/hero-bcg.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
@@ -630,8 +627,6 @@ img {
   color: var(--text-headlink-team-beneftype-col);
   background: var(--portfolio-btn-bcg-col);
 
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -641,7 +636,9 @@ img {
 .btn:focus {
   color: var(--white-txt-color);
   background-color: var(--accent-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
@@ -668,6 +665,10 @@ img {
 .portfolio-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-item-link {
+  text-decoration: none;
 }
 
 .descr-filtname-grp {
